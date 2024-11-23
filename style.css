@@ -37,3 +37,36 @@ body {
     justify-content: center;
     gap: 40px;
 }
+
+.start {
+    background-color: limegreen;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.reset {
+    background-color: yellow;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.pause {
+    background-color: red;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: monospace;
+    color: black;
+    padding: 5px;
+    cursor: pointer;
+}

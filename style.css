@@ -9,3 +9,10 @@
 body {
     background: lightblue;
 }
+
+/* MAIN CONTENT */
+
+.pomodoro--timer {
+    height: 200px;
+    width: 200px;
+}

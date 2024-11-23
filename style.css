@@ -12,6 +12,12 @@ body {
 
 /* MAIN CONTENT */
 
+.pomodoro {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
 .pomodoro--timer {
     height: 200px;
     width: 200px;

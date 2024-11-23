@@ -3,6 +3,7 @@ let minutes;
 let seconds;
 const audio = new Audio();
 audio.src = 'the_field_of_dreams.mp3';
+
 function reduceTime() {
     const splitTime = time.textContent.split(':');
     minutes = parseInt(splitTime[0]);
@@ -30,18 +31,21 @@ const start = document.querySelector('.start');
 let timeReduction;
 start.addEventListener('click', function () {
     timeReduction = setInterval(reduceTime, 1000);
+    audio.pause();
 });
 
 const pause = document.querySelector('.pause');
 
 pause.addEventListener('click', function () {
     time.textContent = `${minutes}:${seconds}`;
+    audio.pause();
     clearInterval(timeReduction);
 })
 
 const reset = document.querySelector('.reset');
 reset.addEventListener('click', () => {
     time.textContent = '25:00';
+    audio.pause();
     clearInterval(timeReduction);
 })
 
